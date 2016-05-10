@@ -1,7 +1,7 @@
 FROM postgres:9.5
 
-RUN apt-get update
-RUN apt-get -y install protobuf-c-compiler libprotobuf-c0-dev unzip git
+RUN apt-get update && \
+    apt-get -y install protobuf-c-compiler libprotobuf-c0-dev unzip git build-essential
 
 WORKDIR /usr/src/postgres/contrib
 
