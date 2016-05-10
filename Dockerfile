@@ -17,5 +17,3 @@ RUN git clone https://github.com/citusdata/cstore_fdw.git && \
     rm -rf cstore_fdw
 
 WORKDIR /usr/src/postgres
-
-ENTRYPOINT ["/usr/src/postgres/docker-entrypoint.sh"]
